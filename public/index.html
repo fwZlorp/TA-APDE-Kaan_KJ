@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login und Assets</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <input type="text" id="username" placeholder="Benutzername">
+    <input type="password" id="password" placeholder="Passwort">
+    <button id="loginBtn">Login</button>
+
+    <h2>Assets</h2>
+    <button id="loadAssetsBtn" disabled>Assets laden</button>
+    <ul id="assetList"></ul>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("loginBtn").addEventListener("click", login);
+            document.getElementById("loadAssetsBtn").addEventListener("click", loadAssets);
+
+            // Prüfen, ob bereits ein Token vorhanden ist
+            const token = localStorage.getItem("token");
+            if (token) {
+                document.getElementById("loadAssetsBtn").disabled = false; // Button aktivieren
+            }
+        });
+
+        async function login() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            if (!username || !password) {
+                alert("Bitte Benutzername und Passwort eingeben.");
+                return;
+            }
+
+            try {
+                const response = await fetch("/api/users/login", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ username, password })
+                });
+
+                const data = await response.json().catch(() => null);
+                
+                if (response.ok && data?.token) {
+                    alert("Login erfolgreich!");
+                    localStorage.setItem("token", data.token);
+                    document.getElementById("loadAssetsBtn").disabled = false; // Button aktivieren
+                } else {
+                    alert("Fehler: " + (data?.message || "Unbekannter Fehler"));
+                    document.getElementById("loadAssetsBtn").disabled = true; // Button deaktivieren
+                }
+            } catch (error) {
+                console.error("Login-Fehler:", error);
+                alert("Es gab ein Problem beim Login. Bitte später erneut versuchen.");
+                document.getElementById("loadAssetsBtn").disabled = true; // Button deaktivieren
+            }
+        }
+
+        async function loadAssets() {
+            const token = localStorage.getItem("token");
+            if (!token) {
+                alert("Kein Token gefunden. Bitte einloggen.");
+                return;
+            }
+
+            try {
+                const response = await fetch("/api/assets", {
+                    method: "GET",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Authorization": "Bearer " + token
+                    }
+                });
+
+                const data = await response.json().catch(() => null);
+                
+                if (!response.ok || !Array.isArray(data)) {
+                    alert("Fehler beim Abrufen der Assets.");
+                    return;
+                }
+
+                const list = document.getElementById("assetList");
+                list.innerHTML = "";
+
+                data.forEach(asset => {
+                    const li = document.createElement("li");
+                    li.textContent = `${asset.name} - ${asset.type} (${asset.location})`;
+                    list.appendChild(li);
+                });
+            } catch (error) {
+                console.error("Fehler beim Laden der Assets:", error);
+                alert("Es gab ein Problem beim Abrufen der Assets.");
+            }
+        }
+    </script>
+</body>
+</html>

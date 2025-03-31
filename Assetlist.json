@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Laptop Dell XPS",
+    "category": "Elektronik",
+    "location": "Zürich, Büro 1",
+    "assignedTo": "Kaan Beyazkilic",
+    "status": "In Betrieb",
+    "price": 2500,
+    "purchaseDate": "2023-03-15"
+  },
+  {
+    "name": "Bürostuhl ErgoChair",
+    "category": "Möbel",
+    "location": "Zürich, Büro 2",
+    "assignedTo": "Kejenmo Mohanadas",
+    "status": "Wartung",
+    "price": 350,
+    "purchaseDate": "2022-11-10"
+  },
+  {
+    "name": "Netzwerk-Switch Cisco 2960",
+    "category": "IT-Infrastruktur",
+    "location": "Serverraum Zürich",
+    "assignedTo": "Kaan Beyazkilic",
+    "status": "In Betrieb",
+    "price": 1500,
+    "purchaseDate": "2023-01-05"
+  },
+  {
+    "name": "Firmenwagen BMW 320d",
+    "category": "Fahrzeug",
+    "location": "Tiefgarage Zürich",
+    "assignedTo": "Kejenmo Mohanadas",
+    "status": "In Betrieb",
+    "price": 45000,
+    "purchaseDate": "2021-09-25"
+  },
+  {
+    "name": "Drucker HP LaserJet 400",
+    "category": "Peripherie",
+    "location": "Zürich, Büro 3",
+    "assignedTo": "Kaan Beyazkilic",
+    "status": "Ausgemustert",
+    "price": 600,
+    "purchaseDate": "2020-06-18"
+  },
+  {
+    "name": "Server Dell PowerEdge R740",
+    "category": "IT-Infrastruktur",
+    "location": "Serverraum Zürich",
+    "assignedTo": "Kejenmo Mohanadas",
+    "status": "Wartung",
+    "price": 8000,
+    "purchaseDate": "2022-02-20"
+  },
+  {
+    "name": "Konferenztisch",
+    "category": "Möbel",
+    "location": "Zürich, Meetingraum",
+    "assignedTo": "Kaan Beyazkilic",
+    "status": "In Betrieb",
+    "price": 1200,
+    "purchaseDate": "2023-05-14"
+  },
+  {
+    "name": "Laptop MacBook Pro 16",
+    "category": "Elektronik",
+    "location": "Zürich, Büro 4",
+    "assignedTo": "Kejenmo Mohanadas",
+    "status": "Wartung",
+    "price": 3200,
+    "purchaseDate": "2022-12-30"
+  },
+  {
+    "name": "Router Ubiquiti EdgeRouter",
+    "category": "IT-Infrastruktur",
+    "location": "Serverraum Zürich",
+    "assignedTo": "Kaan Beyazkilic",
+    "status": "In Betrieb",
+    "price": 400,
+    "purchaseDate": "2021-08-12"
+  },
+  {
+    "name": "Firmenwagen VW Passat",
+    "category": "Fahrzeug",
+    "location": "Tiefgarage Zürich",
+    "assignedTo": "Kejenmo Mohanadas",
+    "status": "Ausgemustert",
+    "price": 32000,
+    "purchaseDate": "2019-05-07"
+  },
+  {
+    "name": "Tablet Microsoft Surface Pro",
+    "category": "Elektronik",
+    "location": "Zürich, Büro 5",
+    "assignedTo": "Kejenmo Mohanadas",
+    "status": "In Betrieb",
+    "price": 1800,
+    "purchaseDate": "2023-04-10"
+  },
+  {
+    "name": "Stehschreibtisch FlexDesk",
+    "category": "Möbel",
+    "location": "Zürich, Büro 6",
+    "assignedTo": "Kaan Beyazkilic",
+    "status": "Wartung",
+    "price": 750,
+    "purchaseDate": "2021-09-20"
+  },
+  {
+    "name": "Firewall Palo Alto PA-220",
+    "category": "IT-Infrastruktur",
+    "location": "Serverraum Zürich",
+    "assignedTo": "Kejenmo Mohanadas",
+    "status": "In Betrieb",
+    "price": 3200,
+    "purchaseDate": "2022-07-15"
+  },
+  {
+    "name": "Firmenwagen Audi A4 Avant",
+    "category": "Fahrzeug",
+    "location": "Tiefgarage Zürich",
+    "assignedTo": "Kaan Beyazkilic",
+    "status": "In Betrieb",
+    "price": 48000,
+    "purchaseDate": "2022-10-05"
+  },
+  {
+    "name": "Monitor Dell UltraSharp 27",
+    "category": "Peripherie",
+    "location": "Zürich, Büro 7",
+    "assignedTo": "Kejenmo Mohanadas",
+    "status": "Wartung",
+    "price": 900,
+    "purchaseDate": "2023-02-14"
+  },
+  {
+    "name": "Server HPE ProLiant DL380",
+    "category": "IT-Infrastruktur",
+    "location": "Serverraum Zürich",
+    "assignedTo": "Kaan Beyazkilic",
+    "status": "In Betrieb",
+    "price": 12000,
+    "purchaseDate": "2022-03-10"
+  },
+  {
+    "name": "Besprechungstisch Holz",
+    "category": "Möbel",
+    "location": "Zürich, Meetingraum 2",
+    "assignedTo": "Kejenmo Mohanadas",
+    "status": "In Betrieb",
+    "price": 1350,
+    "purchaseDate": "2023-06-21"
+  },
+  {
+    "name": "Drucker Canon ColorWave",
+    "category": "Peripherie",
+    "location": "Zürich, Büro 8",
+    "assignedTo": "Kaan Beyazkilic",
+    "status": "Ausgemustert",
+    "price": 2200,
+    "purchaseDate": "2019-05-18"
+  },
+  {
+    "name": "Firmenwagen Tesla Model 3",
+    "category": "Fahrzeug",
+    "location": "Tiefgarage Zürich",
+    "assignedTo": "Kejenmo Mohanadas",
+    "status": "In Betrieb",
+    "price": 55000,
+    "purchaseDate": "2023-01-07"
+  },
+  {
+    "name": "Firewall Fortinet FortiGate 60F",
+    "category": "IT-Infrastruktur",
+    "location": "Serverraum Zürich",
+    "assignedTo": "Kaan Beyazkilic",
+    "status": "Wartung",
+    "price": 2900,
+    "purchaseDate": "2022-08-30"
+  }
+]
