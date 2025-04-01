@@ -1,0 +1,17 @@
+# Alle node_modules in diesem Ordner und Unterordnern
+node_modules/
+*/node_modules/
+
+# Build-Ordner
+dist/
+dist-ssr/
+
+# Umgebungsdateien & Editorzeug
+.env
+*.local
+.DS_Store
+.vscode/
+.idea/
+
+# Logs
+*.log
